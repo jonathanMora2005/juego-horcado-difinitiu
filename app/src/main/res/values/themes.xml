@@ -1,8 +1,15 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.JocDelPenjat" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Fes que ButtonWithoutTint sigui l'estil per defecte dels botons -->
+        <item name="buttonStyle">@style/ButtonWithoutTint</item>
+    </style>
+
+    <style name="ButtonWithoutTint" parent="Widget.AppCompat.Button">
+        <!-- Eliminar el fons per defecte i qualsevol tint -->
+        <item name="android:background">@drawable/fbuton</item>
+        <item name="android:backgroundTint">@null</item>
+        <item name="android:elevation">0dp</item>
     </style>
 
     <style name="Theme.JocDelPenjat" parent="Base.Theme.JocDelPenjat" />
